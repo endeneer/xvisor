@@ -285,6 +285,7 @@ static int zynq_serial_driver_remove(struct vmm_device *dev)
 }
 
 static struct vmm_devtree_nodeid zynq_serial_devid_table[] = {
+	{ .compatible = "sifive,uart0" },
 	{ .compatible = "cdns,uart-r1p12" },
 	{ .compatible = "cdns,uart-r1p8" },
 	{ .compatible = "xlnx,xuartps" },

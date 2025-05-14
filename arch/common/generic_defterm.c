@@ -701,6 +701,7 @@ static struct vmm_devtree_nodeid defterm_devid_table[] = {
 	{ .compatible = "xlnx,xuartps", .data = &zynq_uart_ops },
 	{ .compatible = "xlnx,opb-uartlite-1.00.b", .data = &xlnx_uartlite_ops },
 	{ .compatible = "xlnx,xps-uartlite-1.00.a", .data = &xlnx_uartlite_ops },
+	{ .compatible = "sifive,uart0", .data = &zynq_uart_ops },
 	{ /* end of list */ },
 };
 

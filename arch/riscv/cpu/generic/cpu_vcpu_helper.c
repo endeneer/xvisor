@@ -268,10 +268,10 @@ int arch_vcpu_init(struct vmm_vcpu *vcpu)
 			   riscv_isa_extension_host(), RISCV_ISA_EXT_MAX);
 
 		/* H-extension only available when AIA CSRs are available */
-		if (!riscv_isa_extension_available(NULL, SxAIA)) {
-			riscv_priv(vcpu)->isa[0] &=
-					~riscv_isa_extension_mask(h);
-		}
+		/* if (!riscv_isa_extension_available(NULL, SxAIA)) { */
+		/* 	riscv_priv(vcpu)->isa[0] &= */
+		/* 			~riscv_isa_extension_mask(h); */
+		/* } */
 
 		/* Initialize nested state */
 		rc = cpu_vcpu_nested_init(vcpu);
